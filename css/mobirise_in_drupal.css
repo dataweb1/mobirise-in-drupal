@@ -1,0 +1,42 @@
+/** Navigation tweaks to work with drupal navigation. */
+section.menu {
+  min-height: 70px!important;
+}
+
+@media (min-width: 992px) {
+  /*
+  .toolbar-fixed nav.navbar,
+  .toolbar-horizontal nav.navbar {
+    position: relative!important;
+  }
+   */
+}
+
+#toolbar-administration {
+  z-index: 2000;
+  position: relative;
+}
+
+
+/* When admin menu loaded. */
+.toolbar-fixed nav.navbar,
+.toolbar-horizontal nav.navbar {
+  position: relative!important;
+}
+
+.toolbar-fixed section.menu,
+.toolbar-horizontal section.menu {
+  z-index: 1;
+}
+
+div[data-drupal-messages] {
+  margin-top: 25px;
+}
+
+body.user-logged-in div[data-drupal-messages] {
+  margin-top: 0;
+}
+
+.block-system-main-block {
+
+}

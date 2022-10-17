@@ -1,0 +1,5 @@
+name: Mobirise in Drupal
+type: module
+description: Some CSS/JS to integrate the Drupal admin around a Mobirise website.
+core_version_requirement: ^8 || ^9
+package: dw

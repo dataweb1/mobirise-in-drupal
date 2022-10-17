@@ -1,0 +1,22 @@
+{
+    "name": "dataweb1/mobirise_in_drupal",
+    "description": "Drupal module that extends the views templates suggestions.",
+    "type": "drupal-module",
+    "homepage": "https://github.com/dataweb1/mailchimp_subscribe",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+    },
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Bert Jansen",
+            "email": "bert@data-web.be",
+            "role": "Owner"
+        }
+    ]
+}

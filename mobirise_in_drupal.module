@@ -1,0 +1,10 @@
+<?php
+/**
+ * Implements hook_preprocess_html().
+ */
+function mobirise_in_drupal_preprocess_html(array &$variables) {
+  $front_theme_name = \Drupal::config('system.theme')->get('default');
+  if (\Drupal::service('theme.manager')->getActiveTheme()->getName() == $front_theme_name) {
+    $variables['#attached']['library'][] = 'mobirise_in_drupal/mobirise_in_drupal';
+  }
+}

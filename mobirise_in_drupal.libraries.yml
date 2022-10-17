@@ -1,0 +1,6 @@
+mobirise_in_drupal:
+  js:
+    js/mobirise_in_drupal.js: {}
+  css:
+    theme:
+      css/mobirise_in_drupal.css: {}
