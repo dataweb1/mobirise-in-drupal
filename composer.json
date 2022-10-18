@@ -1,6 +1,6 @@
 {
     "name": "dataweb1/mobirise_in_drupal",
-    "description": "Drupal module that extends the views templates suggestions.",
+    "description": "Module that wraps Drupal around a Mobirise website.",
     "type": "drupal-module",
     "homepage": "https://github.com/dataweb1/mailchimp_subscribe",
     "repositories": [
