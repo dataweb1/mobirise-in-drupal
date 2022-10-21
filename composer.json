@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+        "drupal/admin_toolbar": "^3.2"
     },
     "license": "GPL-2.0-or-later",
     "authors": [
