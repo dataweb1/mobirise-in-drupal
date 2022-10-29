@@ -8,9 +8,9 @@
   };
 
   $(window).scroll(function() {
-    // If drupal admin toolbar is active.
+    // If drupal admin toolbar is in place.
     if ($('.toolbar-bar').length > 0) {
-      // And mobirise header is active too.
+      // And mobirise header is in place too.
       if ($('header .top-header').length > 0) {
         // Stick to the bottom of the admin toolbar.
         let headerTop = $('header .top-header').offset().top;
