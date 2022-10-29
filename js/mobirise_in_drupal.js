@@ -8,20 +8,23 @@
   };
 
   $(window).scroll(function() {
-
-    if ($('header .top-header').length > 0) {
-      let headerTop = $('header .top-header').offset().top;
-      let adminToolbarHeight = $('.toolbar-bar').height() + $('.toolbar-tray-horizontal.is-active').height();
-      let navTop = headerTop - $(window).scrollTop();
-      if (headerTop > 0) {
-        if (navTop < adminToolbarHeight) {
-          navTop = adminToolbarHeight + 1;
+    // If drupal admin toolbar is active.
+    if ($('.toolbar-bar').length > 0) {
+      // And mobirise header is active too.
+      if ($('header .top-header').length > 0) {
+        // Stick to the bottom of the admin toolbar.
+        let headerTop = $('header .top-header').offset().top;
+        let adminToolbarHeight = $('.toolbar-bar').height() + $('.toolbar-tray-horizontal.is-active').height();
+        let navTop = headerTop - $(window).scrollTop();
+        if (headerTop > 0) {
+          if (navTop < adminToolbarHeight) {
+            navTop = adminToolbarHeight + 1;
+          }
         }
+        $('nav.navbar').css('top', navTop);
+      } else {
+        $('nav.navbar').css('position', 'relative');
       }
-      $('nav.navbar').css('top', navTop);
-    }
-    else {
-      $('nav.navbar').css('position', 'relative');
     }
   });
 
