@@ -46,7 +46,7 @@
           $('body').css('padding-top', adminToolbarHeight + $('nav.navbar').height());
         }
 
-        let navTop = headerTop - $(window).scrollTop();
+        let navTop = headerTop - $(window).scrollTop() - $('.header-placeholder').height
         if ($(window).scrollTop() > (adminToolbarHeight)) {
           navTop = adminToolbarHeight;
         }
